@@ -1,2 +1,5 @@
 # StarShip-war-
-My first game using cpp 
+Try your best to beat your opponent.
+Do or Die!!!
+
+Just enjoy :-)
