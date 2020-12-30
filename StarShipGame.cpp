@@ -1,22 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
+int lengthBattlefeild,numberShips,shipSize;
+string board,comBoard;
+
+void userSetup();
+void computerSetup();
+void start();
 
 int main(){
     cout<<"Welcome to 1-D Battleship!\n";
-    //user setup
+    userSetup();
+    computerSetup();
+    start();
+    return 0;
+}
+
+void userSetup(){
     string name;
     cout<<"Select your name: ";
     cin>>name;
-    int lengthBattlefeild;
-    int numberShips;
-    int shipSize;
     cout<<"Now choose size of the battlefield: ";
     cin>>lengthBattlefeild;
     cout<<"Number of ships: ";
     cin>>numberShips;
     cout<<"Size of the ships: ";
     cin>>shipSize;
-    string board;
     for(int i=1;i<=lengthBattlefeild;++i)
         board+='_';
     cout<<"User: "<<name<<endl;
@@ -54,8 +62,10 @@ int main(){
             ++i;
         }
     }
-// Computer setup
-    string comBoard;
+}
+
+
+void computerSetup(){
     for(int i=1;i<=lengthBattlefeild;++i)
         comBoard+='_';
     for(int i=0;i<numberShips;){
@@ -83,8 +93,9 @@ int main(){
             ++i;
         }
     }
-    cout<<"computer board: "<<comBoard<<endl;
-    //Game start
+}
+
+void start(){
     cout<<"We are ready to start!\n";
     string temp;
     for(int i=0;i<lengthBattlefeild;++i){
@@ -137,6 +148,5 @@ int main(){
         }
         
     }
-
-    return 0;
 }
+
