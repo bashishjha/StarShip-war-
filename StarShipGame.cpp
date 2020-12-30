@@ -3,6 +3,7 @@ using namespace std;
 
 int main(){
     cout<<"Welcome to 1-D Battleship!\n";
+    //user setup
     string name;
     cout<<"Select your name: ";
     cin>>name;
@@ -102,7 +103,7 @@ int main(){
             temp[idx-1]='x';
             comBoard[idx-1]='x';
         }
-        cout<<"This is how computer's field looks like now\n";
+        cout<<"This is how computer's field looks like now:\n";
         cout<<temp<<endl;
         cout<<"Computer's turn\n";
         idx=rand()%lengthBattlefeild;
