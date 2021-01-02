@@ -17,7 +17,7 @@ int main(){
 
 void userSetup(){
     string name;
-    cout<<"Select your name: ";
+    cout<<"Enter your name: ";
     cin>>name;
     cout<<"Now choose size of the battlefield: ";
     cin>>lengthBattlefeild;
@@ -102,7 +102,7 @@ void start(){
         temp+='_';
     }
     while(1){
-        cout<<"Select position of the shot: ";
+        cout<<"Select position of the shot(it must be between "<<1<<" && "<<lengthBattlefeild<<" both inclusive)";
         int idx;
         cin>>idx;
         if(comBoard[idx-1]=='_'){
